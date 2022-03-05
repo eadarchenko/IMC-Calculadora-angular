@@ -1,0 +1,30 @@
+<div>
+    <p>Ingrese nombre: <input type="text" [(ngModel)]="nombre"></p>
+
+</div>
+
+<br>
+<div>
+    <p>Peso(Kilogramos):</p>
+    <button type="button" (click)="minuspeso()"><i class="fa fa-minus"></i>-</button>
+    <input type="text" [(ngModel)]="peso">
+    <button type="button" (click)="pluspeso()"><i class="fa fa-plus"></i>+</button>
+    <br>
+    <p>Estatura(Centimetros)</p>
+    <button type="button" (click)="minusaltura()"><i class="fa fa-minus"></i>-</button>
+    <input type="text" [(ngModel)]="altura">
+    <button type="button" (click)="plusaltura()"><i class="fa fa-plus"></i>+</button>
+    <br>
+    <br>
+    <button type="button" (click)="calcularIMC()">Calcular</button><br>
+    <br>
+    <p>El IMC de {{ nombre }} es: {{ imc }} </p>
+
+
+</div><br>
+<!--<div>
+    <ul>
+       / <li *ngFor="let element of historial">
+
+        </li>
+    </ul>-->
